@@ -10,6 +10,8 @@ GameObject:
   m_Component:
   - component: {fileID: 8574392367069155408}
   - component: {fileID: 8574392367069155411}
+  - component: {fileID: -4926880265210823597}
+  - component: {fileID: 7536106706765463427}
   m_Layer: 0
   m_Name: 2d car obs
   m_TagString: Untagged
@@ -82,3 +84,90 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &-4926880265210823597
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8574392367069155410}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b0a3b6200a74da46967752b5d39aad0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  waypoints:
+  - {fileID: 4096780722905866602, guid: f70a0c60fa438924e8f76ab3f63d8902, type: 3}
+  - {fileID: 7761640582737383279, guid: fcf90cc058a140644afe8db31fe5b632, type: 3}
+  - {fileID: 8923383285764785580, guid: 1897ee051e04d3c4c8f0ce6e1a05f190, type: 3}
+  ObstacleMoveSpeed: 1.5
+  waveConfig: {fileID: 11400000, guid: fbe2f88b9177f7241abec6b9a1322b65, type: 2}
+--- !u!60 &7536106706765463427
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8574392367069155410}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 2.88, y: 1.47}
+    newSize: {x: 2.88, y: 1.47}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: -0.66999996, y: -0.435}
+      - {x: 0.59999996, y: -0.42499998}
+      - {x: 0.65999997, y: -0.475}
+      - {x: 0.74, y: -0.545}
+      - {x: 0.79999995, y: -0.575}
+      - {x: 0.96, y: -0.575}
+      - {x: 1.03, y: -0.545}
+      - {x: 1.11, y: -0.475}
+      - {x: 1.15, y: -0.355}
+      - {x: 1.1899999, y: -0.39499998}
+      - {x: 1.26, y: -0.39499998}
+      - {x: 1.4, y: -0.325}
+      - {x: 1.4, y: -0.21499999}
+      - {x: 1.36, y: -0.16499999}
+      - {x: 1.31, y: -0.065}
+      - {x: 0.84999996, y: 0.405}
+      - {x: 0.72999996, y: 0.465}
+      - {x: 0.58, y: 0.515}
+      - {x: 0.45999998, y: 0.545}
+      - {x: -0.089999996, y: 0.545}
+      - {x: -0.19, y: 0.515}
+      - {x: -0.25, y: 0.49499997}
+      - {x: -0.47, y: 0.265}
+      - {x: -0.48, y: 0.24499999}
+      - {x: -0.75, y: 0.24499999}
+      - {x: -0.77, y: 0.235}
+      - {x: -0.9, y: 0.21499999}
+      - {x: -0.91999996, y: 0.205}
+      - {x: -1, y: 0.185}
+      - {x: -1.06, y: 0.155}
+      - {x: -1.1, y: 0.114999995}
+      - {x: -1.18, y: 0.074999996}
+      - {x: -1.31, y: -0.065}
+      - {x: -1.4, y: -0.24499999}
+      - {x: -1.4, y: -0.315}
+      - {x: -1.36, y: -0.385}
+      - {x: -1.24, y: -0.355}
+      - {x: -1.1999999, y: -0.475}
+      - {x: -1.12, y: -0.545}
+      - {x: -1.06, y: -0.575}
+      - {x: -0.9, y: -0.575}
+      - {x: -0.83, y: -0.545}
+      - {x: -0.78, y: -0.505}
+      - {x: -0.72999996, y: -0.415}
