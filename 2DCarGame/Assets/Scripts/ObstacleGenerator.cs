@@ -12,7 +12,7 @@ public class ObstacleGenerator : MonoBehaviour
     {
         var presentWave = waveConfigList[origWave];
 
-        StartCoroutine(GenerateAllObjectsInWave(presentWave));
+        StartCoroutine(MakeAllWaves());
     }
 
     // Update is called once per frame
@@ -23,9 +23,24 @@ public class ObstacleGenerator : MonoBehaviour
 
     private IEnumerator GenerateAllObjectsInWave(WavesConfigs wavesConfigs)
     {
-        Instantiate(wavesConfigs.GetObjectPrefab(), wavesConfigs.RetrievePoints()[0].transform.position, Quaternion.identity);
+        for (int objectExist = 1; objectExist <= wavesConfigs.GetNumberOfObjects(); objectExist ++)
+        {
+            var newObject = Instantiate(wavesConfigs.GetObjectPrefab(), wavesConfigs.RetrievePoints()[0].transform.position, Quaternion.identity);
 
-        yield return new WaitForSeconds(wavesConfigs.GetTimeBetweenReSpawns());
+
+            newObject.GetComponent<ObstacleWave>().SetWavesConfig(wavesConfigs);
+
+            yield return new WaitForSeconds(wavesConfigs.GetTimeBetweenReSpawns());
+        }
+        
+    }
+
+    private IEnumerator MakeAllWaves()
+    {
+        foreach(WavesConfigs presentWave in waveConfigList)
+        {
+            yield return StartCoroutine(GenerateAllObjectsInWave(presentWave));
+        }
     }
 
 }

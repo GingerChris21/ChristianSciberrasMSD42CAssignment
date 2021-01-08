@@ -50,6 +50,12 @@ public class ObstacleWave : MonoBehaviour
             Destroy(gameObject);
         }
 
+        
+
+    }
+    public void SetWavesConfig(WavesConfigs wavesConfigsToMake)
+    {
+        waveConfig = wavesConfigsToMake;
     }
 
 }

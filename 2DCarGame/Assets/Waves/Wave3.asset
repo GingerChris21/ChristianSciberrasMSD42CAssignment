@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2a549cbd0736e944b8e315572bc7c4ee, type: 3}
+  m_Name: Wave3
+  m_EditorClassIdentifier: 
+  objectsPrefab: {fileID: 4805549575136639244, guid: b778fd6c26f3e054f9221d559ca0fff6, type: 3}
+  pathsPrefab: {fileID: 4112322421988145730, guid: 1adf78dc03a32d84e8006276ecc6bf47, type: 3}
+  timeToRespawn: 1
+  generateRespawnRandomFactor: 0.3
+  numberOfObjects: 1
+  objectMoveSpeed: 0.5

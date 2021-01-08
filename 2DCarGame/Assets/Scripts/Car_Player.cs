@@ -7,6 +7,9 @@ public class Car_Player : MonoBehaviour
 
     [SerializeField] float padding = 0.7f;
     [SerializeField] float moveSpeed = 5f;
+
+    [SerializeField] float health = 50f;
+
     float xMin, xMax, yMin, yMax;
     // Start is called before the first frame update
     void Start()
@@ -18,6 +21,38 @@ public class Car_Player : MonoBehaviour
     void Update()
     {
         Move_car();
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        
+        DamageDealer dmgDealer = collision.gameObject.GetComponent<DamageDealer>();
+
+        
+        if (!dmgDealer) 
+        {
+            return;
+        }
+
+        ProcessHit(dmgDealer);
+
+    }
+
+    private void ProcessHit(DamageDealer dmgDealer)
+    {
+        health -= dmgDealer.GetDmg();
+
+        dmgDealer.Contact();
+
+        if (health <= 0)
+        {
+            Defeat();
+        }
+    }
+
+    private void Defeat()
+    {
+        Destroy(gameObject);
     }
 
     private void SetUpMoveBoundaries()

@@ -12,6 +12,9 @@ GameObject:
   - component: {fileID: 8574392367069155411}
   - component: {fileID: -4926880265210823597}
   - component: {fileID: 7536106706765463427}
+  - component: {fileID: -8958755401318431873}
+  - component: {fileID: 2725772808763123908}
+  - component: {fileID: -5590873392846842033}
   m_Layer: 0
   m_Name: 2d car obs
   m_TagString: Untagged
@@ -96,12 +99,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4b0a3b6200a74da46967752b5d39aad0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  waypoints:
-  - {fileID: 4096780722905866602, guid: f70a0c60fa438924e8f76ab3f63d8902, type: 3}
-  - {fileID: 7761640582737383279, guid: fcf90cc058a140644afe8db31fe5b632, type: 3}
-  - {fileID: 8923383285764785580, guid: 1897ee051e04d3c4c8f0ce6e1a05f190, type: 3}
+  waypoints: []
   ObstacleMoveSpeed: 1.5
-  waveConfig: {fileID: 11400000, guid: fbe2f88b9177f7241abec6b9a1322b65, type: 2}
+  waveConfig: {fileID: 0}
 --- !u!60 &7536106706765463427
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -112,7 +112,7 @@ PolygonCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -171,3 +171,54 @@ PolygonCollider2D:
       - {x: -0.83, y: -0.545}
       - {x: -0.78, y: -0.505}
       - {x: -0.72999996, y: -0.415}
+--- !u!50 &-8958755401318431873
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8574392367069155410}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
+--- !u!114 &2725772808763123908
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8574392367069155410}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: df24e95a00461ba449e37a9d743d6fd9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  shotCounter: 0
+  minTimeBetweenFiring: 0.5
+  maxTimeBetweenFiring: 1.5
+  objectBulletPrefab: {fileID: 1317633298357218789, guid: f6e76fa3b0a79054ab09c4fb5f300851, type: 3}
+  objectBulletSpeed: 7
+--- !u!114 &-5590873392846842033
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8574392367069155410}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ebfbd32c71e2f3345bdcdb6fec3da257, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dmg: 1
