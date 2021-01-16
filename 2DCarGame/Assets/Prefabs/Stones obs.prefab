@@ -143,6 +143,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dmg: 3
+  deathVFX: {fileID: 1719799793702275379, guid: b5ea0b83a5f4bfd4e826e3956351dc47, type: 3}
+  explosionDuration: 1
 --- !u!50 &8532730002614233052
 Rigidbody2D:
   serializedVersion: 4

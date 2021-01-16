@@ -10,6 +10,8 @@ public class Car_Player : MonoBehaviour
 
     [SerializeField] float health = 50f;
 
+    [SerializeField] AudioClip playerHitSound;
+
     float xMin, xMax, yMin, yMax;
     // Start is called before the first frame update
     void Start()
@@ -35,6 +37,7 @@ public class Car_Player : MonoBehaviour
         }
 
         ProcessHit(dmgDealer);
+        AudioSource.PlayClipAtPoint(playerHitSound, Camera.main.transform.position);
 
     }
 

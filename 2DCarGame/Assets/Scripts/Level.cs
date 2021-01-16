@@ -14,7 +14,7 @@ public class Level : MonoBehaviour
     }
     public void LoadGame()
     {
-        SceneManager.LoadScene("Car_Game");
+        SceneManager.LoadScene("Car_Game 1");
     }
     public void LoadGameOver()
     {

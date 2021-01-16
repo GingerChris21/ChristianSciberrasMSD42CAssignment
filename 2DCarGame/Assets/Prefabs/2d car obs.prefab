@@ -207,7 +207,7 @@ MonoBehaviour:
   shotCounter: 0
   minTimeBetweenFiring: 0.5
   maxTimeBetweenFiring: 1.5
-  objectBulletPrefab: {fileID: 1317633298357218789, guid: f6e76fa3b0a79054ab09c4fb5f300851, type: 3}
+  objectBulletPrefab: {fileID: 7940977981604728082, guid: f6e76fa3b0a79054ab09c4fb5f300851, type: 3}
   objectBulletSpeed: 7
 --- !u!114 &-5590873392846842033
 MonoBehaviour:
@@ -222,3 +222,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dmg: 1
+  deathVFX: {fileID: 1719799793702275379, guid: b5ea0b83a5f4bfd4e826e3956351dc47, type: 3}
+  explosionDuration: 1
