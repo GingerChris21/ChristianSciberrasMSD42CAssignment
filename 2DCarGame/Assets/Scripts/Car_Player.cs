@@ -12,6 +12,9 @@ public class Car_Player : MonoBehaviour
 
     [SerializeField] AudioClip playerHitSound;
 
+    [SerializeField] GameObject deathVFX;
+    [SerializeField] float explosionDuration = 1f;
+
     float xMin, xMax, yMin, yMax;
     // Start is called before the first frame update
     void Start()
@@ -56,6 +59,9 @@ public class Car_Player : MonoBehaviour
     private void Defeat()
     {
         Destroy(gameObject);
+        GameObject crash_explosion = Instantiate(deathVFX, transform.position, Quaternion.identity);
+        Destroy(crash_explosion, explosionDuration);
+        FindObjectOfType<Level>().LoadGameOver();
     }
 
     private void SetUpMoveBoundaries()

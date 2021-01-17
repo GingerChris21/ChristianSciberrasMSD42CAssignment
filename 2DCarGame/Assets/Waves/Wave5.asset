@@ -16,5 +16,5 @@ MonoBehaviour:
   pathsPrefab: {fileID: 877896570951860333, guid: 067f1337b4b2f5e418c74a4f41129a00, type: 3}
   timeToRespawn: 1
   generateRespawnRandomFactor: 0.3
-  numberOfObjects: 4
+  numberOfObjects: 2
   objectMoveSpeed: 7

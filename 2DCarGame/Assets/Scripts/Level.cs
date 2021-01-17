@@ -10,7 +10,7 @@ public class Level : MonoBehaviour
     IEnumerator WaitingonLoad()
     {
         yield return new WaitForSeconds(Extend);
-        SceneManager.LoadScene("Game Over");
+        SceneManager.LoadScene("Over");
     }
     public void LoadGame()
     {
