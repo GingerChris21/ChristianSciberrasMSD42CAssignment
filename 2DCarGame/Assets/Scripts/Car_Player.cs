@@ -8,7 +8,7 @@ public class Car_Player : MonoBehaviour
     [SerializeField] float padding = 0.7f;
     [SerializeField] float moveSpeed = 5f;
 
-    [SerializeField] float health = 50f;
+    [SerializeField] int health = 50;
 
     [SerializeField] AudioClip playerHitSound;
 
@@ -20,6 +20,10 @@ public class Car_Player : MonoBehaviour
     void Start()
     {
         SetUpMoveBoundaries();
+    }
+    public int GetHealth()
+    {
+        return health;
     }
 
     // Update is called once per frame
