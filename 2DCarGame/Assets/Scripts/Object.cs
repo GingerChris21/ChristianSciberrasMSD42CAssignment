@@ -14,6 +14,9 @@ public class Object : MonoBehaviour
 
     [SerializeField] float objectBulletSpeed = 0.5f;
 
+    [SerializeField] GameObject deathVFX;
+    [SerializeField] float explosionDuration = 1f;
+
     private void Start()
     {
         shotCounter = Random.Range(minTimeBetweenFiring, maxTimeBetweenFiring);
@@ -40,5 +43,12 @@ public class Object : MonoBehaviour
         GameObject objectBullet = Instantiate(objectBulletPrefab, transform.position, Quaternion.identity) as GameObject;
 
         objectBullet.GetComponent<Rigidbody2D>().velocity = new Vector2(0, -objectBulletSpeed);
+    }
+    private void Defeat()
+    {
+        Destroy(gameObject);
+        GameObject crash_explosion = Instantiate(deathVFX, transform.position, Quaternion.identity);
+        Destroy(crash_explosion, explosionDuration);
+        
     }
 }

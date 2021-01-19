@@ -25,6 +25,7 @@ public class Car_Player : MonoBehaviour
     {
         return health;
     }
+    
 
     // Update is called once per frame
     void Update()
@@ -59,6 +60,9 @@ public class Car_Player : MonoBehaviour
             Defeat();
         }
     }
+    
+
+    
 
     private void Defeat()
     {

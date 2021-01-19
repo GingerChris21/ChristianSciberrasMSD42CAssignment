@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Wave3
   m_EditorClassIdentifier: 
   objectsPrefab: {fileID: 4805549575136639244, guid: b778fd6c26f3e054f9221d559ca0fff6, type: 3}
-  pathsPrefab: {fileID: 4112322421988145730, guid: 1adf78dc03a32d84e8006276ecc6bf47, type: 3}
+  pathsPrefab: {fileID: 2418715441736463631, guid: 1adf78dc03a32d84e8006276ecc6bf47, type: 3}
   timeToRespawn: 1
   generateRespawnRandomFactor: 0.3
   numberOfObjects: 1

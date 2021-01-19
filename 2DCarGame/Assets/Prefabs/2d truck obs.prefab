@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: -8541143828153802425}
   - component: {fileID: 4069744013753847818}
   - component: {fileID: -947063660322654380}
+  - component: {fileID: -4093939938248977627}
   m_Layer: 0
   m_Name: 2d truck obs
   m_TagString: Untagged
@@ -166,3 +167,20 @@ MonoBehaviour:
   dmg: 2
   deathVFX: {fileID: 1719799793702275379, guid: b5ea0b83a5f4bfd4e826e3956351dc47, type: 3}
   explosionDuration: 1
+--- !u!114 &-4093939938248977627
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9027611413061624910}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: df24e95a00461ba449e37a9d743d6fd9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  shotCounter: 0
+  minTimeBetweenFiring: 50
+  maxTimeBetweenFiring: 100
+  objectBulletPrefab: {fileID: 0}
+  objectBulletSpeed: 0.5

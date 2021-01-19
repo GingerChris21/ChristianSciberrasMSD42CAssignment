@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 6489272973366309867}
   - component: {fileID: 3187449156015677554}
   - component: {fileID: 4762063751535586421}
+  - component: {fileID: 3281296696281946896}
   m_Layer: 0
   m_Name: 2d player car
   m_TagString: Untagged
@@ -131,3 +132,16 @@ MonoBehaviour:
   playerHitSound: {fileID: 8300000, guid: f2bc16ab10ccc1c419d0bad66cc22952, type: 3}
   deathVFX: {fileID: 1719799793702275379, guid: b5ea0b83a5f4bfd4e826e3956351dc47, type: 3}
   explosionDuration: 1
+--- !u!114 &3281296696281946896
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6489272973366309864}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ebfbd32c71e2f3345bdcdb6fec3da257, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dmg: 100

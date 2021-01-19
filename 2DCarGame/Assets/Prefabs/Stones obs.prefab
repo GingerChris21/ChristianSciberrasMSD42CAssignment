@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 1841487087181237250}
   - component: {fileID: 4674916171320165819}
   - component: {fileID: 8532730002614233052}
+  - component: {fileID: -8292104555457918333}
   m_Layer: 0
   m_Name: Stones obs
   m_TagString: Untagged
@@ -166,3 +167,20 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &-8292104555457918333
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4805549575136639244}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: df24e95a00461ba449e37a9d743d6fd9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  shotCounter: 0
+  minTimeBetweenFiring: 50
+  maxTimeBetweenFiring: 100
+  objectBulletPrefab: {fileID: 7940977981604728082, guid: f6e76fa3b0a79054ab09c4fb5f300851, type: 3}
+  objectBulletSpeed: 0.5
